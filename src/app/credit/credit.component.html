@@ -1,0 +1,22 @@
+<p>
+  credit works!
+</p>
+<form [formGroup]="demoForm" (ngSubmit)="onSubmit(demoForm)"  novalidate style="margin-bottom:2%;">
+
+  
+  <div class="form-group" style="margin-left:20%;margin-top:3%;">
+    <label for="cc-number" class="control-label">CARD 1</label>
+    <input id="cc-number" formControlName="creditCard" type="tel" class=" form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" ccNumber style="width:35%;font-size:24px;">
+    <img src="../assets/images/edit.png" style="margin-top: -7px; margin-left: 5px;">
+  </div>
+  <div class="form-group" style="margin-left:20%;">
+    <label for="cc-number" class="control-label">CARD 2</label>
+    <input id="cc-number" formControlName="creditCard" type="tel" class=" form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" ccNumber style="width:35%;font-size:24px;margin-top: -10px;">
+    <img src="../assets/images/edit.png" style="margin-top: -7px; margin-left: 5px;">
+    <img src="../assets/images/add.png" style="margin-top: -7px; margin-left: 5px;" (click)="successTrigger1()">
+    <p style="margin-top: 1%;max-width: 25%;">your next invoice breakup April 2017</p>
+  </div>
+  
+
+  
+</form>
